@@ -1,12 +1,10 @@
-package com.bb.boot.web;
+package com.bb.boot.configuration;
 
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Service
-public class WebController {
+public class WebConfiguration {
     @RequestMapping("/")
     String home() {
         return "And now his watch has ended";
@@ -17,7 +15,7 @@ public class WebController {
         return "Priiiu Priiiu";
     }
 
-    @RequestMapping("/Betty")
+    @RequestMapping("/betty")
     String catel() {
         return "Ham Ham";
     }
